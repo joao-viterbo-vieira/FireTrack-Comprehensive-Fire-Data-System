@@ -1,0 +1,28 @@
+Since it was not able to underline in .txt file. We opted to write [PK] meaning the primary key of the table. In the case of Fire_Firefighter_Assignment and Fires_ Vehicle_Assignment� both atributes together are the primary key.
+
+Cause�(Cod[PK]�, Type [NN], Group [NN], Description [NN])
+
+Fires�(Code_SGIF[PK], Date_Time [NN], TotalArea_ha [NN], DateTime_Alert, DateTime_FirstIntervention, DateTime_Extinction, Latitude, Longitude, DSR, FWI, ISI, DC, DMC, FFMC, BUI, Alert_Source, #Cod -> Cause, #Code_DTCCFR -> Parish)
+
+Vehicles�(Registration_Plate[PK], Status [NN], Last_Maintenance_Date, Capacity [NN], #Id -> Model [NN], #Id -> Firestation)
+
+Model�(Id[PK]�, Name [NN], Make [NN])
+
+Firestations�(Id[PK], Name [NN], Capacity_Vehicles [NN], Capacity_Firefighters [NN], Address [NN], #Code_DTCCFR -> Parish)
+
+Firefighters�(Code[PK]�, Name [NN], Rank [NN], Contact [NN], Status [NN], Starting_Year [NN], Certifications, #Id -> Firestation)
+
+Parish�(Code_DTCCFR[PK], Name [NN], Municipality [NN], District [NN])
+
+Firetruck�(#Id -> Model�[PK], Water_Capacity [NN], Pump_Capacity [NN], Hose_Length [NN])
+
+WaterTank�(#Id -> Model [PK], Water_Capacity [NN], Pump_Capacity [NN], Trayler_Type [NN])
+
+Helicopter�(#Id -> Model [PK], Max_Altitude [NN], Water_Capacity [NN], Flight_Range [NN])
+
+Ambulance�(#Id -> Model [PK], Medical_Equipment [NN])
+
+Fire_Firefighter_Assignment�(#Code SGIF -> Fires [PK], #Code -> Firefighters [PK])
+
+Fires_ Vehicle_Assignment�(#Code SGIF -> Fires [PK],#Registration_Plate -> Vehicles [PK])
+
