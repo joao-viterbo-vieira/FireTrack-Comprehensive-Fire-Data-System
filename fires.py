@@ -14,12 +14,12 @@ wildfire_colors = ['#ff4e00', '#ff8000', '#ffaa00', '#cc6600', '#993d00']
 def get_connection():  
     try:
         conn = psycopg.connect("""
-          dbname=up202107689
-          user=up202107689
-          password=up202107689
-          host=dbm.fe.up.pt
-          port=5433
-          options='-c search_path=fires'
+          dbname=xxxx
+          user=xxxxxx
+          password=xxxxxx
+          host=xxxxx
+          port=xxxxxx
+          options='xxxxxxx'
           """)
         return conn
     except Exception as e:
