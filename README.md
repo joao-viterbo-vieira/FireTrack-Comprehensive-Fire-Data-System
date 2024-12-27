@@ -1,7 +1,7 @@
 # Fire Incident Management System
 
 The *Fire Incident Management System* is a comprehensive tool for managing and analyzing fire-related data, including incidents, firefighter records, vehicle assignments, and station resources. Built with Python, PostgreSQL, and data visualization libraries, this system enables efficient fire data management, incident tracking, resource allocation, and statistical analysis.
-
+Work carried out for the course Fundamentals of Data Science within the scope of database management, for the 1st semester of the 1st year of the Master’s program in Data Science and Engineering.
 ## Key Functionalities
 
 - **Incident and Resource Management**: Track fire incidents and manage firefighters, vehicles, and station resources.
