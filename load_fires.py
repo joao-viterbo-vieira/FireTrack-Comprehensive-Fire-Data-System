@@ -4,7 +4,7 @@ import pandas as pd
 
 conn = psycopg.connect("""
   dbname= xxxxx
-  user=xxxxx
+  user=xxxxxx
   password=xxxxx
   host= xxxxx
   port=xxxx
